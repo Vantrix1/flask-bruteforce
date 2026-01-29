@@ -1,8 +1,4 @@
 import requests
-import random
-from itertools import product
-import string
-import argparse
 from random_user_agent.user_agent import UserAgent
 from random_user_agent.params import SoftwareName, OperatingSystem
 count = 0
@@ -57,4 +53,5 @@ with open("wordlist.txt") as f:
             #print(response.status_code)
             
         except Exception as e:
+
             print(e)
